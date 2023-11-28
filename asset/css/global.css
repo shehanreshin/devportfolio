@@ -28,6 +28,7 @@ body {
 
 #about-section {
     font-family: 'GeneralSans-Semibold', sans-serif;
+    margin-bottom: 2rem;
 }
 
 #card-role {
@@ -123,4 +124,70 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+#about-section .section-1 {
+    margin-bottom: 2rem;
+}
+
+#about-section .section-2 {
+    height: 29rem;
+    background-color: red;
+}
+
+#about-section .section-2 .col-4:not(:first-child, :last-child) {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+#about-section .section-2 .grid-4-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#card-status {
+    background-color: #2B2B2B;
+    margin-bottom: 1rem;
+}
+
+.section-2 .square {
+    background-color: #3D3D3D;
+    height: 2.563rem;
+    width: 2.563rem;
+    border-radius: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2 .circle {
+    background-color: #2DEE61;
+    height: 0.875rem;
+    width: 0.875rem;
+    border-radius: .6rem;
+}
+
+#card-more-about-me {
+    margin-top: 1rem;
+    background-color: #ECC351;
+}
+
+#card-skills {
+    color: #2B2B2B;
+    margin-bottom: 1rem !important;
+}
+
+#card-languages {
+    color: #2B2B2B;
+    margin-top: 1rem !important;
+}
+
+#card-location {
+    color: #2B2B2B;
+    margin-bottom: 1rem !important;
+}
+
+#card-ed-background {
+    color: #2B2B2B;
+    margin-top: 1rem !important;
 }
