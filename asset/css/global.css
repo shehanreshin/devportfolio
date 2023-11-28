@@ -8,9 +8,9 @@ body {
     padding: 0 !important;
 }
 
-.col:not(:first-child, :last-child) {
-    padding-left: 32px !important;
-    padding-right: 32px !important;
+#navbar .col:not(:first-child, :last-child) {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
 }
 
 #navbar {
@@ -24,4 +24,34 @@ body {
 
 #nav-about {
     color: #ECC351 !important;
+}
+
+#card-title {
+    height: 13rem;
+    background-color: #2B2B2B;
+    margin-bottom: 2rem;
+}
+
+#card-photograph {
+    padding-left: 2rem !important;
+    height: 35rem;
+}
+
+.grid-5-2 {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    height: 20rem;
+}
+
+#card-intro {
+    background-color: #ECC351;
+    color: #2B2B2B;
+    margin-right: 1rem !important;
+    font-size: 0.875rem;
+}
+
+#card-local-time {
+    box-sizing: border-box;
+    border: .5rem solid white !important;
+    margin-left: 1rem !important;
 }
