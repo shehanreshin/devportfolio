@@ -1,0 +1,27 @@
+@import url("../font/GeneralSans_Complete/Fonts/WEB/css/general-sans.css");
+
+body {
+    font-family: 'GeneralSans-Bold', sans-serif !important;
+}
+
+[class*="col"] {
+    padding: 0 !important;
+}
+
+.col:not(:first-child, :last-child) {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+}
+
+#navbar {
+    font-size: 1.5rem;
+}
+
+#logo {
+    font-family: 'GeneralSans-Semibold', sans-serif;
+    border-radius: 1.3rem;
+}
+
+#nav-about {
+    color: #ECC351 !important;
+}
