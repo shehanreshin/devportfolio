@@ -1,3 +1,14 @@
+@import url("../font/GeneralSans_Complete/Fonts/WEB/css/general-sans.css");
+
+body {
+    font-family: 'GeneralSans-Bold', sans-serif !important;
+}
+
 [class*="col"] {
     padding: 0 !important;
+}
+
+.col:not(:first-child, :last-child) {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
 }
