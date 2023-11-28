@@ -26,10 +26,26 @@ body {
     color: #ECC351 !important;
 }
 
-#card-title {
+#about-section {
+    font-family: 'GeneralSans-Semibold', sans-serif;
+}
+
+#card-role {
     height: 13rem;
     background-color: #2B2B2B;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+}
+
+#card-role .title {
+    font-size: 2.938rem;
+}
+
+#card-role .details {
+    font-size: 1.375rem;
 }
 
 #card-photograph {
@@ -48,10 +64,63 @@ body {
     color: #2B2B2B;
     margin-right: 1rem !important;
     font-size: 0.875rem;
+    border-radius: 1.25rem;
+}
+
+#card-intro .title {
+    font-size: 1.625rem;
+    margin-bottom: 1.5rem;
+}
+
+#card-intro .details {
+    font-size: 0.875rem;
+}
+
+#card-intro .content {
+    margin: 1.5rem 2.313rem;
 }
 
 #card-local-time {
     box-sizing: border-box;
-    border: .5rem solid white !important;
+    border: .4rem solid white !important;
     margin-left: 1rem !important;
+    border-radius: 1.25rem;
+}
+
+#card-local-time .content {
+    margin: .4rem 1.188rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 95%;
+}
+
+#card-local-time #time {
+    font-size: 2.438rem;
+}
+
+#card-local-time #time-of-day {
+    font-size: 2.188rem;
+    margin-top: -.8rem;
+}
+
+#card-local-time .label {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#card-photograph .section {
+    border-radius: 2rem !important;
+}
+
+#card-photograph .photo-holder {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#card-photograph .photo {
+    border-radius: 2rem !important;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
