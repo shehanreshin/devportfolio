@@ -12,3 +12,16 @@ body {
     padding-left: 32px !important;
     padding-right: 32px !important;
 }
+
+#navbar {
+    font-size: 1.5rem;
+}
+
+#logo {
+    font-family: 'GeneralSans-Semibold', sans-serif;
+    border-radius: 1.3rem;
+}
+
+#nav-about {
+    color: #ECC351 !important;
+}
