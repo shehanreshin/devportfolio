@@ -4,7 +4,8 @@ function getLocalDate() {
 
 function updateTime() {
     let date = getLocalDate();
-    time.innerHTML = date.getHours() % 12 + ":" + date.getMinutes();
+    hours = date.getHours() % 12 === 0 ? 12 : date.getHours() % 12;
+    time.innerHTML = hours + ":" + date.getMinutes().toString().padStart(2, '0');
     timeOfDay.innerHTML = date.toLocaleTimeString().slice(-2);
 }
 
