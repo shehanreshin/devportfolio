@@ -192,6 +192,28 @@ body {
     border-radius: 1.5rem !important;
 }
 
+#card-skills .content {
+    padding: 1.5rem 2.313rem;
+}
+
+#card-skills .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#card-skills .skill-row {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+#card-skills .skill {
+    font-size: 12px;
+    border: 3px solid #2B2B2B;
+    padding: 2px 10px;
+    margin-right: 3px;
+    border-radius: 1rem;
+}
+
 #card-languages {
     color: #2B2B2B;
     margin-top: 1rem !important;
@@ -200,6 +222,18 @@ body {
     margin-left: 1rem !important;
     margin-right: 1rem !important;
     border-radius: 1.5rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#card-languages .title {
+    font-size: 1.5rem;
+}
+
+#card-languages .details {
+    font-size: 0.938rem;
 }
 
 #card-location {
