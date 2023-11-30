@@ -467,3 +467,41 @@ body {
     padding-top: .8rem;
     padding-bottom: 1rem;
 }
+
+#stack-section .section-2 .stack-row:nth-child(1) .stack-card:nth-child(1),
+#stack-section .section-2 .stack-row:nth-child(2) .stack-card:nth-child(1),
+#stack-section .section-2 .stack-row:nth-child(3) .stack-card:nth-child(1),
+#stack-section .section-2 .stack-row:nth-child(3) .stack-card:nth-child(2) {
+    margin-right: 2rem;
+}
+
+#stack-section .section-2 .stack-row:nth-child(1) .stack-card:nth-child(2) .stack-card-content,
+#stack-section .section-2 .stack-row:nth-child(2) .stack-card:nth-child(1) .stack-card-content {
+    padding: 1.75rem 1.9rem;
+}
+
+#stack-section .section-2 .stack-row:nth-child(1) .stack-card:nth-child(1),
+#stack-section .section-2 .stack-row:nth-child(2) .stack-card:nth-child(2),
+#stack-section .section-2 .stack-row:nth-child(3) .stack-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: .5rem 3rem;
+}
+
+#stack-section .section-2 .stack-row:nth-child(3) .stack-card:nth-child(3) {
+    padding: .5rem 2.25rem;
+}
+
+#stack-section .section-2 .stack-row:nth-child(1) .stack-card:nth-child(1) .stack-card-content,
+#stack-section .section-2 .stack-row:nth-child(2) .stack-card:nth-child(2) .stack-card-content,
+#stack-section .section-2 .stack-row:nth-child(3) .stack-card .stack-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#stack-section .section-2 .stack-row:nth-child(1) .stack-card:nth-child(1) .technology-name,
+#stack-section .section-2 .stack-row:nth-child(2) .stack-card:nth-child(2) .technology-name,
+#stack-section .section-2 .stack-row:nth-child(3) .stack-card .technology-name {
+    padding-top: 1rem;
+}
