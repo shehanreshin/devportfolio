@@ -353,6 +353,7 @@ body {
 
 #stack-section {
     display: flex;
+    margin-bottom: 2rem;
 }
 
 #stack-section {
@@ -504,4 +505,13 @@ body {
 #stack-section .section-2 .stack-row:nth-child(2) .stack-card:nth-child(2) .technology-name,
 #stack-section .section-2 .stack-row:nth-child(3) .stack-card .technology-name {
     padding-top: 1rem;
+}
+
+#projects-header-section {
+    font-size: 2.5rem;
+    font-family: 'GeneralSans-Semibold', sans-serif;
+    border-radius: 1.25rem;
+    margin-bottom: 2rem;
+    background-color: #ECC351;
+    color: #2B2B2B;
 }
