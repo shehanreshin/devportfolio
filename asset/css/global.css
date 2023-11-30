@@ -350,3 +350,19 @@ body {
     border-radius: 1.25rem;
     margin-bottom: 1.5rem;
 }
+
+#stack-section .stack-card {
+    border: 1px solid red;
+}
+
+#stack-section .section-2 {}
+
+#stack-section .section-2 .stack-row {
+    display: flex;
+}
+
+#stack-section .section-2 .stack-card {
+    display: flex;
+}
+
+#stack-section .section-2 .stack-content {}
