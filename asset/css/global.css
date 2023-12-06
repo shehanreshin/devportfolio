@@ -609,3 +609,11 @@ body {
 #projects-section-2 .inner-card-4 .line-3 {
     font-size: 1.5rem;
 }
+
+#socials-header-section {
+    font-size: 2.5rem;
+    font-family: 'GeneralSans-Semibold', sans-serif;
+    border-radius: 1.25rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
