@@ -515,3 +515,97 @@ body {
     background-color: #ECC351;
     color: #2B2B2B;
 }
+
+#projects-section-1,
+#projects-section-2 {
+    margin-bottom: 2rem;
+    height: 23rem;
+}
+
+#projects-section-1 .project-card,
+#projects-section-2 .project-card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'GeneralSans-Semibold', sans-serif;
+}
+
+#projects-section-1 .project-card .title,
+#projects-section-2 .project-card .title {
+    background-color: #2B2B2B;
+    font-size: 1.625rem;
+}
+
+
+#projects-section-1 .project-card .btn-check-it-out,
+#projects-section-2 .project-card .btn-check-it-out {
+    padding: .5rem 2.5rem;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+#projects-section-1 .project-card .description,
+#projects-section-2 .project-card .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+#projects-section-1 .project-card img,
+#projects-section-2 .project-card img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+
+#projects-section-1 .inner-card-2 {
+    height: 22.5rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    margin-left: 1rem;
+    font-family: 'GeneralSans-Semibold', sans-serif;
+}
+
+#projects-section-1 .inner-card-2 img {
+    width: 100%;
+    height: 22.5rem;
+    object-fit: contain;
+}
+
+#projects-section-2 .inner-card-4 {
+    height: 22.5rem;
+    background-color: #ECC351;
+    border-radius: 1.25rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'GeneralSans-Semibold', sans-serif;
+    padding: 1rem 1.75rem;
+}
+
+#projects-section-1 .inner-card,
+#projects-section-2 .inner-card {
+    margin-right: 1rem;
+    background-color: #2B2B2B;
+    color: white;
+    border-radius: 1.25rem;
+}
+
+#projects-section-2 .inner-card-4 .line-1 {
+    font-size: 1.625rem;
+}
+
+#projects-section-2 .inner-card-4 .line-2 {
+    font-size: 2.5rem;
+}
+
+#projects-section-2 .inner-card-4 .line-1:nth-child(3) {
+    padding-left: 2.5rem;
+}
+
+#projects-section-2 .inner-card-4 .line-3 {
+    font-size: 1.5rem;
+}
