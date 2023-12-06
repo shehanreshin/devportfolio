@@ -609,3 +609,74 @@ body {
 #projects-section-2 .inner-card-4 .line-3 {
     font-size: 1.5rem;
 }
+
+#socials-header-section {
+    font-size: 2.5rem;
+    font-family: 'GeneralSans-Semibold', sans-serif;
+    border-radius: 1.25rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+/* div {
+    border: 1px solid red;
+} */
+
+
+#socials-section-1,
+#socials-section-2 {
+    margin-bottom: 2rem;
+}
+
+#socials-section-1 .inner-card {
+    font-family: 'GeneralSans-Semibold', sans-serif;
+    font-size: 1.125rem;
+    background-color: #2B2B2B;
+    height: 13.25rem;
+    border-radius: 1rem;
+    color: #ECC351;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#socials-section-2 .inner-card {
+    font-family: 'GeneralSans-Semibold', sans-serif;
+    font-size: 1.125rem;
+    background-color: #ECC351;
+    height: 13.25rem;
+    border-radius: 1rem;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#socials-section-1 .socials-card:not(:first-child, :last-child) .inner-card,
+#socials-section-2 .socials-card:not(:first-child, :last-child) .inner-card {
+    margin: 0rem 1rem;
+}
+
+#socials-section-1 .socials-card:first-child .inner-card,
+#socials-section-2 .socials-card:first-child .inner-card {
+    margin-right: 1rem;
+}
+
+#socials-section-1 .socials-card:last-child .inner-card,
+#socials-section-2 .socials-card:last-child .inner-card {
+    margin-left: 1rem;
+}
+
+#socials-section-1 .inner-card .text-holder,
+#socials-section-2 .inner-card .text-holder {
+    padding: 1rem 0rem;
+}
+
+#socials-section-1 .inner-card .img-holder,
+#socials-section-2 .inner-card .img-holder {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+}
