@@ -618,11 +618,6 @@ body {
     background-color: white;
 }
 
-/* div {
-    border: 1px solid red;
-} */
-
-
 #socials-section-1,
 #socials-section-2 {
     margin-bottom: 2rem;
@@ -679,4 +674,39 @@ body {
     display: flex;
     justify-content: center;
     padding: 1rem 0rem;
+}
+
+#footer-card {
+    font-family: 'GeneralSans-Semibold', sans-serif;
+    border-radius: 1.25rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+#footer-card .inner-card {
+    color: #2B2B2B;
+}
+
+#footer-card .inner-card .line-1 {
+    font-size: 3rem;
+}
+
+#footer-card .inner-card .line-2 {
+    font-size: 2rem;
+    margin-bottom: 0.875rem;
+}
+
+#btn-reach-out {
+    background-color: #ECC351;
+    color: #2B2B2B;
+    font-size: 1.25rem;
+    width: 12.75rem;
+    border: none;
+    border-radius: 1.5rem;
+    padding: .4rem 0;
+}
+
+#nav-back-to-top {
+    font-size: 1.5rem;
+
 }
