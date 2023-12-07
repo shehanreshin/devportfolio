@@ -78,23 +78,7 @@ cursorScale.forEach(text => {
     });
 });
 
-console.log(stylesheet.item);
-let elementRules;
-
-for (let i = 0; i < stylesheet.cssRules.length; i++) {
-    console.log(stylesheet.cssRules[i]);
-}
-
-cursorFit.forEach(container => {
-    container.addEventListener('mouseleave', () => {
-        cursor.classList.remove('grow-fit');
-    });
-    container.addEventListener('mousemove', () => {
-        cursor.classList.add('grow-fit');
-    });
-});
-
-const lenis = new Lenis(0)
+const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
     console.log(e)

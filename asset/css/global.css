@@ -351,6 +351,8 @@ body {
 #stack-section {
     display: flex;
     margin-bottom: 2rem;
+    position: relative;
+    top: -1000;
 }
 
 #stack-section {
@@ -757,4 +759,24 @@ html.lenis {
 
 .lenis.lenis-scrolling iframe {
     pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    padding: 10rem 10rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 1.5rem;
+    margin-block: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(236, 195, 81, 1);
+    border-radius: 1.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(236, 195, 81, .8);
 }
