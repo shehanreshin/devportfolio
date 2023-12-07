@@ -62,6 +62,7 @@ var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     cursorLink = document.querySelectorAll('.cursor-link'),
     stylesheet = document.styleSheets[0],
+    statusCircle = document.getElementById('status-circle'),
     mouseX = 0,
     mouseY = 0;
 
@@ -73,6 +74,20 @@ gsap.to({}, 0.016, {
             css: {
                 left: mouseX,
                 top: mouseY
+            }
+        })
+    }
+});
+
+t1 = gsap.timeline();
+
+t1.to({}, 0.016, {
+    repeat: -1,
+
+    onRepeat: () => {
+        gsap.set(statusCircle, {
+            css: {
+
             }
         })
     }
