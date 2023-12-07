@@ -60,7 +60,7 @@ document.getElementById('nav-back-to-top')
 gsap.registerPlugin(ScrollToPlugin)
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
-    cursorFit = document.querySelectorAll('.cursor-fit'),
+    cursorLink = document.querySelectorAll('.cursor-link'),
     stylesheet = document.styleSheets[0],
     mouseX = 0,
     mouseY = 0;
@@ -83,6 +83,8 @@ window.addEventListener("mousemove", (e) => {
     mouseY = e.clientY;
 });
 
+var iconArrow = cursor.children[0];
+
 cursorScale.forEach(text => {
     text.addEventListener('mouseleave', () => {
         cursor.classList.remove('grow');
@@ -91,9 +93,19 @@ cursorScale.forEach(text => {
     text.addEventListener('mousemove', () => {
         cursor.classList.add('grow');
         if (text.classList.contains('cursor-sm')) {
-            // cursor.classList.remove('grow');
             cursor.classList.add('grow-small');
         }
+    });
+});
+
+cursorLink.forEach(container => {
+    container.addEventListener('mouseleave', () => {
+        cursor.classList.remove('grow-link');
+        iconArrow.setAttribute('style', 'opacity: 0;');
+    });
+    container.addEventListener('mousemove', () => {
+        cursor.classList.add('grow-link');
+        iconArrow.setAttribute('style', 'opacity: 1;');
     });
 });
 
