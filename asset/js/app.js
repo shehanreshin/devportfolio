@@ -9,6 +9,8 @@ function updateTime() {
     timeOfDay.innerHTML = date.toLocaleTimeString().slice(-2);
 }
 
+
+
 const time = document.getElementById("time");
 const timeOfDay = document.getElementById("time-of-day");
 updateTime();
@@ -39,6 +41,23 @@ document.getElementById("socials-frontendmentor")
 document.getElementById("socials-codewars")
     .addEventListener("click", () => window.open("https://www.codewars.com/users/shehanreshin"));
 
+document.getElementById('nav-about')
+    .addEventListener('click', () => gsap.to(window, { duration: .5, scrollTo: "#about-section" }));
+
+document.getElementById('nav-stack')
+    .addEventListener('click', () => gsap.to(window, { duration: .7, scrollTo: "#stack-header-section" }));
+
+document.getElementById('nav-projects')
+    .addEventListener('click', () => gsap.to(window, { duration: .9, scrollTo: "#projects-header-section" }));
+
+document.getElementById('nav-socials')
+    .addEventListener('click', () => gsap.to(window, { duration: 1.1, scrollTo: "#socials-header-section" }));
+
+document.getElementById('nav-back-to-top')
+    .addEventListener('click', () => gsap.to(window, { duration: 1.3, scrollTo: 0 }));
+
+
+gsap.registerPlugin(ScrollToPlugin)
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     cursorFit = document.querySelectorAll('.cursor-fit'),
