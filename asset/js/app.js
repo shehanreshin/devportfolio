@@ -93,3 +93,16 @@ cursorFit.forEach(container => {
         cursor.classList.add('grow-fit');
     });
 });
+
+const lenis = new Lenis(0)
+
+lenis.on('scroll', (e) => {
+    console.log(e)
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)

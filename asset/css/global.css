@@ -724,7 +724,7 @@ body {
 
 .grow,
 .grow-small {
-    transform: scale(10);
+    transform: scale(7);
     background: #ffffff;
     mix-blend-mode: difference;
 }
@@ -734,7 +734,27 @@ body {
 }
 
 .grow-fit {
-    transform: scale(10);
+    transform: scale(7);
     background: #ffffff;
     mix-blend-mode: difference;
+}
+
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
 }
