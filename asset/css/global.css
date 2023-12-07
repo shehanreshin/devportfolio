@@ -2,6 +2,7 @@
 
 body {
     font-family: 'GeneralSans-Bold', sans-serif !important;
+    cursor: none;
 }
 
 [class*="col"] {
@@ -20,10 +21,6 @@ body {
 #logo {
     font-family: 'GeneralSans-Semibold', sans-serif;
     border-radius: 1.3rem;
-}
-
-#nav-about {
-    color: #ECC351 !important;
 }
 
 #about-section {
@@ -709,4 +706,35 @@ body {
 #nav-back-to-top {
     font-size: 1.5rem;
 
+}
+
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    border-radius: 50%;
+    background-color: #4D4637;
+    transition: transform .3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.grow,
+.grow-small {
+    transform: scale(10);
+    background: #ffffff;
+    mix-blend-mode: difference;
+}
+
+.grow-small {
+    transform: scale(3);
+}
+
+.grow-fit {
+    transform: scale(10);
+    background: #ffffff;
+    mix-blend-mode: difference;
 }

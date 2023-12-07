@@ -38,3 +38,58 @@ document.getElementById("socials-frontendmentor")
 
 document.getElementById("socials-codewars")
     .addEventListener("click", () => window.open("https://www.codewars.com/users/shehanreshin"));
+
+var cursor = document.querySelector('.cursor'),
+    cursorScale = document.querySelectorAll('.cursor-scale'),
+    cursorFit = document.querySelectorAll('.cursor-fit'),
+    stylesheet = document.styleSheets[0],
+    mouseX = 0,
+    mouseY = 0;
+
+gsap.to({}, 0.016, {
+    repeat: -1,
+
+    onRepeat: () => {
+        gsap.set(cursor, {
+            css: {
+                left: mouseX,
+                top: mouseY
+            }
+        })
+    }
+});
+
+window.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+cursorScale.forEach(text => {
+    text.addEventListener('mouseleave', () => {
+        cursor.classList.remove('grow');
+        cursor.classList.remove('grow-small');
+    });
+    text.addEventListener('mousemove', () => {
+        cursor.classList.add('grow');
+        if (text.classList.contains('cursor-sm')) {
+            // cursor.classList.remove('grow');
+            cursor.classList.add('grow-small');
+        }
+    });
+});
+
+console.log(stylesheet.item);
+let elementRules;
+
+for (let i = 0; i < stylesheet.cssRules.length; i++) {
+    console.log(stylesheet.cssRules[i]);
+}
+
+cursorFit.forEach(container => {
+    container.addEventListener('mouseleave', () => {
+        cursor.classList.remove('grow-fit');
+    });
+    container.addEventListener('mousemove', () => {
+        cursor.classList.add('grow-fit');
+    });
+});
